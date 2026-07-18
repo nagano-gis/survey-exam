@@ -9,10 +9,10 @@
 <title>測量士 午前 一問一答</title>
 <style>
 :root{
-  --bg:#0f1420; --card:#1a2130; --card2:#222b3d; --line:#2e3a52;
-  --txt:#e8edf5; --sub:#9fb0c8; --accent:#3b82f6; --accent2:#2563eb;
-  --ok:#22c55e; --okbg:#0f3123; --ng:#ef4444; --ngbg:#3a1414;
-  --badge:#334155; --shadow:0 6px 20px rgba(0,0,0,.35);
+  --bg:#f4f6fa; --card:#ffffff; --card2:#eef1f7; --line:#dde3ec;
+  --txt:#1a2130; --sub:#5b6b85; --accent:#3b82f6; --accent2:#2563eb;
+  --ok:#16a34a; --okbg:#e5f7ec; --ng:#dc2626; --ngbg:#fdecec;
+  --badge:#e5e9f0; --shadow:0 6px 16px rgba(30,40,60,.10);
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0}
@@ -23,7 +23,7 @@ body{
 }
 .wrap{max-width:640px;margin:0 auto;padding:0 14px 40px}
 header{
-  position:sticky;top:0;z-index:10;background:rgba(15,20,32,.92);
+  position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);   /* 元: rgba(15,20,32,.92) */
   backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
   padding:10px 14px;
 }
@@ -56,9 +56,9 @@ header{
   padding:16px 15px;margin-top:14px;box-shadow:var(--shadow)}
 .meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
 .badge{font-size:11px;padding:3px 9px;border-radius:99px;background:var(--badge);color:#cdd8ea;font-weight:600}
-.badge.yr{background:#1e3a5f;color:#8ec5ff}
-.badge.type{background:#3b2f5f;color:#c9b5ff}
-.badge.ox{background:#123a2a;color:#7dd3a0}
+.badge.yr{background:#dbeafe;color:#1d4ed8}
+.badge.type{background:#ede9fe;color:#6d28d9}
+.badge.ox{background:#dcfce7;color:#15803d}
 .qno{color:var(--sub);font-size:12px;margin-left:auto;align-self:center}
 .lead-ox{font-size:12.5px;color:var(--sub);margin-bottom:6px}
 .qtext{font-size:15.5px;font-weight:600;white-space:pre-wrap;margin-bottom:6px}
@@ -68,7 +68,7 @@ header{
   font-size:14.5px;color:var(--txt);text-align:left;transition:.15s;width:100%}
 .choice:active{transform:scale(.99)}
 .choice .n{flex:0 0 24px;height:24px;border-radius:50%;background:var(--badge);
-  display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#dfe8f5}
+  display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#3a4658}
 .choice.correct{background:var(--okbg);border-color:var(--ok)}
 .choice.correct .n{background:var(--ok);color:#04220f}
 .choice.wrong{background:var(--ngbg);border-color:var(--ng)}
@@ -83,7 +83,7 @@ header{
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;transition:.15s}
 .oxbtn:active{transform:scale(.97)}
 .oxbtn .sym{font-size:38px;line-height:1;height:42px;display:flex;align-items:center;justify-content:center}
-.oxbtn.o .sym{color:#7dd3a0}.oxbtn.x .sym{color:#ff9b9b}
+.oxbtn.o .sym{color:#16a34a}.oxbtn.x .sym{color:#dc2626}
 .oxbtn small{font-size:11px;color:var(--sub);font-weight:600}
 .oxbtn>span:last-child,.oxbtn{white-space:nowrap}
 .oxbtn.correct{background:var(--okbg);border-color:var(--ok)}
@@ -125,7 +125,7 @@ header{
 .fig svg{width:100%;height:auto;display:block}
 .figcap{font-size:12.5px;color:var(--sub);margin-top:8px;text-align:center}
 .exbody{font-size:14.5px}
-.exbody h3{font-size:15px;margin:18px 0 6px;color:#8ec5ff}
+.exbody h3{font-size:15px;margin:18px 0 6px;color:#1d4ed8}
 .exbody p{margin:6px 0}
 .formula{background:var(--card2);border-radius:10px;padding:10px 12px;margin:10px 0;
   font-size:15px;text-align:center;font-weight:700;letter-spacing:.02em}
